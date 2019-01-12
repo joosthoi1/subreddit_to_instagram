@@ -132,6 +132,9 @@ while True:
         print(43200/folders)
         time.sleep(43200/folders) #sleeps 12 hours devided by the amount of photobursts
         #deletes all the photos-
+        InstagramAPI.getSelfUserFeed()
+        MediaList = InstagramAPI.LastJson
+        Media = MediaList['items']
         for f in Media:
             MediaID = f['id']
             MediaType = f['media_type']
