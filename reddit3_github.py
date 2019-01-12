@@ -1,3 +1,5 @@
+#cirkeltrek is the example subreddit, this can be changed
+
 #imports all nececary modules -
 import praw
 import urllib.request
