@@ -38,8 +38,7 @@ for f in Media:
 #-
 
 #creates lists and sets up a few variables-
-mylist1 = []
-mylist2 = []
+
 aantal = 0
 
 #sections will be used to specify how many pictures will be uploaded in one go, this will be used later
@@ -56,6 +55,9 @@ reddit = praw.Reddit(client_id='Client_id',
 
 #an infinite while loop
 while True:
+    mylist1 = []
+    mylist2 = []
+
     #deletes folders and png pictures in you directory-
     filelist = glob.glob(os.path.join(mydir, "*.png"))
     for f in filelist:
